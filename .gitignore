@@ -20,6 +20,7 @@ imgui.ini
 tags
 *.blend1
 pyrightconfig.json
+*.code-workspace
 
 # Prerequisites
 *.d
