@@ -45,9 +45,9 @@ base_path = os.path.dirname(__file__)
 op_cache_dir = os.path.join(base_path, "data", "op_cache")
 
 if args.dataset_type == "simplified":
-    dataset_path = os.path.join(base_path, "data/simplified")
+    dataset_path = os.path.normpath(os.path.join(base_path, "data/simplified"))
 elif args.dataset_type == "original":
-    dataset_path = os.path.join(base_path, "data/original")
+    dataset_path = os.path.normpath(os.path.join(base_path, "data/original"))
 else:
     raise ValueError("Unrecognized dataset type")
 
